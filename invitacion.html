@@ -9,7 +9,8 @@
     <link rel="icon" type="image/x-icon" href="./assets/img/rings.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Montserrat:wght@100;300;400;500&family=Pinyon+Script&family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Montserrat:wght@100;300;400;500&family=Pinyon+Script&family=Quantico&family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./invitacion.js"></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDm54Yh3atuxgWNK0vfyhk7b8MkndRBt84&callback=initMap&v=weekly"
@@ -18,9 +19,22 @@
 </head>
 <body class="body">
     
-    <header class="header">
+    <header id ="myheader" class="header">
         <p>Nuestra Boda </p>
-        <span >Raquel y Jhovanny</span>
+        
+        <div>
+            <svg width="48px" height="48px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.18 10.79C12.0694 10.7906 11.96 10.7666 11.8598 10.7199C11.7595 10.6733 11.6708 10.605 11.6 10.52L7 5C6.87702 4.8625 6.80902 4.68449 6.80902 4.5C6.80902 4.31552 6.87702 4.13751 7 4L8.82 2.14C8.89109 2.0661 8.97657 2.00757 9.07117 1.96801C9.16577 1.92845 9.26747 1.90871 9.37 1.91H14.89C15.0888 1.91018 15.2795 1.98931 15.42 2.13L17.23 3.93C17.3581 4.06233 17.4338 4.23667 17.443 4.42061C17.4521 4.60454 17.3942 4.78555 17.28 4.93L12.76 10.5C12.6917 10.5885 12.6037 10.6599 12.5031 10.7085C12.4024 10.7571 12.2918 10.7816 12.18 10.78V10.79ZM8.59 4.56L12.17 8.86L15.69 4.52L14.58 3.41H9.69L8.59 4.56Z"/>
+                <path d="M12.14 21.18C10.7295 21.1785 9.35111 20.7593 8.17862 19.9753C7.00613 19.1913 6.09212 18.0775 5.55191 16.7746C5.01171 15.4717 4.8695 14.038 5.14323 12.6543C5.41697 11.2707 6.09439 9.99908 7.09001 9C7.15868 8.92631 7.24148 8.86721 7.33348 8.82622C7.42548 8.78523 7.52479 8.76319 7.62549 8.76141C7.72619 8.75963 7.82622 8.77816 7.91961 8.81588C8.013 8.8536 8.09783 8.90974 8.16905 8.98096C8.24027 9.05218 8.29642 9.13701 8.33414 9.2304C8.37186 9.32379 8.39038 9.42382 8.38861 9.52452C8.38683 9.62523 8.36479 9.72454 8.3238 9.81654C8.2828 9.90854 8.2237 9.99134 8.15001 10.06C7.36462 10.8501 6.83082 11.8551 6.61593 12.9482C6.40104 14.0414 6.5147 15.1737 6.94257 16.2023C7.37044 17.2309 8.09335 18.1097 9.02011 18.728C9.94687 19.3462 11.036 19.6761 12.15 19.6761C13.2641 19.6761 14.3532 19.3462 15.2799 18.728C16.2067 18.1097 16.9296 17.2309 17.3575 16.2023C17.7853 15.1737 17.899 14.0414 17.6841 12.9482C17.4692 11.8551 16.9354 10.8501 16.15 10.06C16.0096 9.91937 15.9307 9.72875 15.9307 9.53C15.9307 9.33125 16.0096 9.14062 16.15 9C16.219 8.92924 16.3014 8.87301 16.3924 8.83461C16.4834 8.79621 16.5812 8.77643 16.68 8.77643C16.7788 8.77643 16.8766 8.79621 16.9676 8.83461C17.0587 8.87301 17.1411 8.92924 17.21 9C18.2091 9.99856 18.8895 11.271 19.1652 12.6564C19.4409 14.0417 19.2995 15.4777 18.7589 16.7827C18.2183 18.0877 17.3027 19.203 16.1281 19.9875C14.9535 20.772 13.5725 21.1905 12.16 21.19L12.14 21.18Z" />
+                </svg>
+            <span >Raquel y Jhovanny</span>
+            <!-- License: CC Attribution. Made by AkashRajDahal: https://dribbble.com/AkashRajDahal -->
+            <svg width="48px" height="48px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 10.51C11.8376 10.5107 11.6795 10.458 11.55 10.36L9.49 8.82001C9.39558 8.75065 9.31847 8.66041 9.26469 8.55633C9.21092 8.45225 9.18193 8.33714 9.18 8.22001V5.13001C9.18116 5.01272 9.20981 4.89734 9.26364 4.79314C9.31748 4.68894 9.39501 4.59881 9.49 4.53001L11.55 3.00001C11.6798 2.90264 11.8377 2.85001 12 2.85001C12.1623 2.85001 12.3202 2.90264 12.45 3.00001L14.51 4.55001C14.605 4.61881 14.6825 4.70894 14.7364 4.81314C14.7902 4.91734 14.8188 5.03272 14.82 5.15001V8.22001C14.8181 8.33714 14.7891 8.45225 14.7353 8.55633C14.6815 8.66041 14.6044 8.75065 14.51 8.82001L12.45 10.36C12.3205 10.458 12.1624 10.5107 12 10.51ZM10.68 7.84001L12 8.84001L13.32 7.84001V5.50001L12 4.52001L10.68 5.52001V7.84001Z" />
+                <path d="M12 21.18C10.5938 21.1687 9.22221 20.7424 8.05733 19.9546C6.89246 19.1668 5.98616 18.0526 5.45212 16.7517C4.91809 15.4508 4.7801 14.0211 5.05547 12.6421C5.33084 11.2631 6.0073 9.99605 7 9C7.13647 8.87491 7.31487 8.80553 7.5 8.80553C7.68512 8.80553 7.86352 8.87491 8 9C8.14045 9.14062 8.21934 9.33125 8.21934 9.53C8.21934 9.72875 8.14045 9.91937 8 10.06C7.21461 10.8501 6.6808 11.8551 6.46591 12.9482C6.25103 14.0414 6.36469 15.1736 6.79255 16.2023C7.22042 17.2309 7.94333 18.1097 8.87009 18.728C9.79685 19.3462 10.8859 19.6761 12 19.6761C13.114 19.6761 14.2031 19.3462 15.1299 18.728C16.0567 18.1097 16.7796 17.2309 17.2074 16.2023C17.6353 15.1736 17.749 14.0414 17.5341 12.9482C17.3192 11.8551 16.7854 10.8501 16 10.06C15.8595 9.91937 15.7807 9.72875 15.7807 9.53C15.7807 9.33125 15.8595 9.14062 16 9C16.0689 8.92924 16.1514 8.87301 16.2424 8.83461C16.3334 8.79621 16.4312 8.77643 16.53 8.77643C16.6288 8.77643 16.7266 8.79621 16.8176 8.83461C16.9086 8.87301 16.9911 8.92924 17.06 9C18.0562 9.99968 18.7338 11.2722 19.0073 12.6568C19.2807 14.0413 19.1376 15.4759 18.5962 16.7792C18.0547 18.0826 17.1392 19.1962 15.9652 19.9795C14.7911 20.7627 13.4113 21.1805 12 21.18Z" />
+                </svg>
+    
+        </div>
     </header>
     <main class="body-main">
         <!-- <div class="body-main"> -->
@@ -35,6 +49,90 @@
                         <cite>1 Corintios 16:14</cite>
                     </blockquote>
                 </div>
+            </section>
+
+            <section class="timeDown">
+                <div>
+                    <p id="days"></p>
+                    <span>Dias</span>
+                </div>
+                <div>
+                    <p id="hours"></p>
+                    <span>Horas</span>
+                </div>    
+                <div>
+                    <p id="mins"></p>
+                    <span>Mins</span>
+                </div>
+                <div>
+                    <p id="secs"></p>
+                    <span>Segs</span>
+                    
+                </div>
+                <!-- <h2 id="end"></h2> -->
+            </section>
+
+            <section class="historia">
+                <div>
+                    <h2>Un poco de nosotros</h2>
+                      
+                    <div class="container">
+                        <div class="wrapper">
+                            <!-- <div> -->
+                                <!-- <span>Nos conocimos al ser estudiambres dentro del internacional TESJI</span>                              -->
+                                <img src="https://picsum.photos/800/400" />                          <!-- photo -->
+                            <!-- </div> -->
+                            <!-- <div> -->
+                                <!-- <span>Aunque teniamos conciencia de nuestra existencia (de ambos) no teniamos convivencia alguna por tener cada quien su banda</span>                              -->
+                                <img src="https://picsum.photos/800/400" /><!-- photo -->
+                            <!-- </div> -->
+                            <!-- <div> -->
+                                <!-- <span>Un dia de trabajo en equipo al intercambiar ideas coincidimos en un sin fin de objetivos de nuestras vidas</span>                              -->
+                                <img src="https://picsum.photos/800/400" /><!-- photo -->
+                            <!-- </div>
+                            <div> -->
+                                <!-- <span>Pese a todo iniciamos una relaci&oacute;n de noviasgo el 12 de Noviembre de 2015</span>                              -->
+                                <img src="https://picsum.photos/800/400" /> <!-- photo -->
+                            <!-- </div>
+                            <div> -->
+                                <!-- <span>El que no arriesga no gana!, me atrev&iacute; a pedirle matrimonio a Raquel el 12 de Noviembre de 2020</span>                              -->
+                                <img src="https://picsum.photos/800/400" />
+                            <!-- </div>
+                            <div> -->
+                                <!-- <span>Nos casamos por lo civil el 19 de Marzo de 2022</span>                              -->
+                                <img src="https://picsum.photos/800/400" />
+                            <!-- </div>
+                            <div> -->
+                                <!-- <span>Ahora velices en este gran viaje por la vida aqui seguimos de pie, firmes y forjando nuestros objetivos</span>                              -->
+                                <img src="https://picsum.photos/800/400" />
+                            <!-- </div> -->
+                        
+                        </div>
+                        <aside class="caslnav">
+                          <ol>
+                            <li class="listbt"><div class="backbt">O</div></li><!-- grey background -->
+                            <li class="listbt"><div class="backbt">O</div></li><!-- grey background -->
+                            <li class="listbt"><div class="backbt">O</div></li><!-- grey background -->
+                            <li class="listbt"><div class="backbt">O</div></li><!-- grey background -->
+                            <li class="listbt"><div class="backbt">O</div></li><!-- grey background -->
+                            <li class="listbt"><div class="backbt">O</div></li><!-- grey background -->
+                            <li class="listbt"><div class="backbt">O</div></li><!-- grey background --> 
+                          </ol>
+                        </aside>
+                        <aside class="caslnav">
+                          <ol>
+                            <li class="listbt"><div class="curtbt">o</div></li><!--white button-->
+                            <li class="listbt"><div class="emptbt"></div></li><!-- spacer -->
+                            <li class="listbt"><div class="emptbt"></div></li><!-- spacer -->
+                            <li class="listbt"><div class="emptbt"></div></li><!-- spacer -->
+                            <li class="listbt"><div class="emptbt"></div></li><!-- spacer -->
+                            <li class="listbt"><div class="emptbt"></div></li><!-- spacer -->
+                            <li class="listbt"><div class="emptbt"></div></li><!-- spacer -->
+                          </ol>
+                        </aside>
+                    </div>
+                </div>
+                
             </section>
             <section class="frase-2">
                 <img src="./assets/img/cruz.svg" alt="Imagen Cruz"></img>
@@ -89,7 +187,7 @@
                         Creemos firmemente que los recuerdos son lo &uacute;nico que de esta vida nos llevaremos, compartamos
                         estas grandiosas memorias en las redes sociales con el hashtag &#35;
                     </span>
-                    <p>&#35; VinePorqueSoyGorrasRJ</p>
+                    <p>&#35; boduquiRJ</p>
                 <!-- </div> -->
                 <!-- <div>
                     <p>&#35; VinePorqueSoyGorras</p>
@@ -113,13 +211,132 @@
             <section class="confirmacion">
                 <h2>Confirma tu asistencia</h2>
                 <span>Para nosotros contar con tu asistencia es de un alto valor pero igual entendemos que no pudieras asistir,
-                     solo te pedimos confirmes tu asistencia sino para forma tomar tu lugar para alguien mas. </span>
+                     solo te pedimos confirmes tu asistencia (con los novios o los padrinos) de lo contrario podamos disponer de ese espacio para alguien mas.</span>
             </section>
         <!-- </div> -->
-        
+            <section class="conocenos">
+                <h2>Conectate con...</h2>
+                <div class="conNovia">
+                    <span>La Novia</span>
+                    <div>
+                        <!-- <a href="#" class="fa fa-facebook"></a> -->
+                        <!-- <img src="./assets/img/logos/icons8-facebook.svg" alt="Logo Facebook"> -->
+                        <button  onclick='window.open("https://www.facebook.com/rachel.martinez.1249031")'>
+                            <svg    xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="48" height="48"
+                                viewBox="0 0 24 24"
+                                >    <path  d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"></path></svg>
+                        </button>
+                        <button onclick='window.open("https://www.instagram.com/rachel_m_g_12")''>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="48" height="48"
+                            viewBox="0 0 24 24"
+                             >    <path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"></path></svg>
+                        </button>
+                        <button onclick='window.open("https://www.youtube.com/channel/UCEBy5Fh4MsKG6v-0tUr8cgQ?sub_confirmation=1")''>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="48" height="48"
+                            viewBox="0 0 24 24"
+                             >    <path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"></path></svg>
+                        </button>
+                        <button onclick='window.open("https://www.tiktok.com/@rachelmg12")'>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"                            
+                            width="48" height="48"
+                            viewBox="0 0 24 24"
+                             ><path d="M 6 3 C 4.3550302 3 3 4.3550302 3 6 L 3 18 C 3 19.64497 4.3550302 21 6 21 L 18 21 C 19.64497 21 21 19.64497 21 18 L 21 6 C 21 4.3550302 19.64497 3 18 3 L 6 3 z M 12 7 L 14 7 C 14 8.005 15.471 9 16 9 L 16 11 C 15.395 11 14.668 10.734156 14 10.285156 L 14 14 C 14 15.654 12.654 17 11 17 C 9.346 17 8 15.654 8 14 C 8 12.346 9.346 11 11 11 L 11 13 C 10.448 13 10 13.449 10 14 C 10 14.551 10.448 15 11 15 C 11.552 15 12 14.551 12 14 L 12 7 z"></path></svg>
+                                            
+                        </button>
+                        <button onclick='window.open("https://twitter.com/rachelMtzGlz")'>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="48" height="48"
+                            viewBox="0 0 24 24"
+                             >    <path d="M22,3.999c-0.78,0.463-2.345,1.094-3.265,1.276c-0.027,0.007-0.049,0.016-0.075,0.023c-0.813-0.802-1.927-1.299-3.16-1.299 c-2.485,0-4.5,2.015-4.5,4.5c0,0.131-0.011,0.372,0,0.5c-3.353,0-5.905-1.756-7.735-4c-0.199,0.5-0.286,1.29-0.286,2.032 c0,1.401,1.095,2.777,2.8,3.63c-0.314,0.081-0.66,0.139-1.02,0.139c-0.581,0-1.196-0.153-1.759-0.617c0,0.017,0,0.033,0,0.051 c0,1.958,2.078,3.291,3.926,3.662c-0.375,0.221-1.131,0.243-1.5,0.243c-0.26,0-1.18-0.119-1.426-0.165 c0.514,1.605,2.368,2.507,4.135,2.539c-1.382,1.084-2.341,1.486-5.171,1.486H2C3.788,19.145,6.065,20,8.347,20 C15.777,20,20,14.337,20,8.999c0-0.086-0.002-0.266-0.005-0.447C19.995,8.534,20,8.517,20,8.499c0-0.027-0.008-0.053-0.008-0.08 c-0.003-0.136-0.006-0.263-0.009-0.329c0.79-0.57,1.475-1.281,2.017-2.091c-0.725,0.322-1.503,0.538-2.32,0.636 C20.514,6.135,21.699,4.943,22,3.999z"></path></svg>
+                        </button> 
+                        </div>
+                </div>
+                <div class="conNovio">
+                    <span>El Novio</span>
+                    <div>
+                        <!-- <a href="#" class="fa fa-facebook"></a> -->
+                        <!-- <img src="./assets/img/logos/icons8-facebook.svg" alt="Logo Facebook"> -->
+                        <button  onclick='window.open("https://www.facebook.com/jhovastellez")'>
+                            <svg    xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="48" height="48"
+                                viewBox="0 0 24 24"
+                                >    <path  d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"></path></svg>
+                        </button>
+                        <button onclick='window.open("https://www.instagram.com/jhiotellez")''>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="48" height="48"
+                            viewBox="0 0 24 24"
+                             >    <path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"></path></svg>
+                        </button>
+                        <button onclick='window.open("https://www.youtube.com/channel/UCPWu5xEPqcx5qF6XFt52q0g?sub_confirmation=1")''>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="48" height="48"
+                            viewBox="0 0 24 24"
+                             >    <path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"></path></svg>
+                        </button>
+                        <button onclick='window.open("https://www.tiktok.com/@jhonnycarpintero")'>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"                            
+                            width="48" height="48"
+                            viewBox="0 0 24 24"
+                             ><path d="M 6 3 C 4.3550302 3 3 4.3550302 3 6 L 3 18 C 3 19.64497 4.3550302 21 6 21 L 18 21 C 19.64497 21 21 19.64497 21 18 L 21 6 C 21 4.3550302 19.64497 3 18 3 L 6 3 z M 12 7 L 14 7 C 14 8.005 15.471 9 16 9 L 16 11 C 15.395 11 14.668 10.734156 14 10.285156 L 14 14 C 14 15.654 12.654 17 11 17 C 9.346 17 8 15.654 8 14 C 8 12.346 9.346 11 11 11 L 11 13 C 10.448 13 10 13.449 10 14 C 10 14.551 10.448 15 11 15 C 11.552 15 12 14.551 12 14 L 12 7 z"></path></svg>
+                                            
+                        </button>
+                        <button onclick='window.open("https://twitter.com/worldhacker0000")'>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="48" height="48"
+                            viewBox="0 0 24 24"
+                             >    <path d="M22,3.999c-0.78,0.463-2.345,1.094-3.265,1.276c-0.027,0.007-0.049,0.016-0.075,0.023c-0.813-0.802-1.927-1.299-3.16-1.299 c-2.485,0-4.5,2.015-4.5,4.5c0,0.131-0.011,0.372,0,0.5c-3.353,0-5.905-1.756-7.735-4c-0.199,0.5-0.286,1.29-0.286,2.032 c0,1.401,1.095,2.777,2.8,3.63c-0.314,0.081-0.66,0.139-1.02,0.139c-0.581,0-1.196-0.153-1.759-0.617c0,0.017,0,0.033,0,0.051 c0,1.958,2.078,3.291,3.926,3.662c-0.375,0.221-1.131,0.243-1.5,0.243c-0.26,0-1.18-0.119-1.426-0.165 c0.514,1.605,2.368,2.507,4.135,2.539c-1.382,1.084-2.341,1.486-5.171,1.486H2C3.788,19.145,6.065,20,8.347,20 C15.777,20,20,14.337,20,8.999c0-0.086-0.002-0.266-0.005-0.447C19.995,8.534,20,8.517,20,8.499c0-0.027-0.008-0.053-0.008-0.08 c-0.003-0.136-0.006-0.263-0.009-0.329c0.79-0.57,1.475-1.281,2.017-2.091c-0.725,0.322-1.503,0.538-2.32,0.636 C20.514,6.135,21.699,4.943,22,3.999z"></path></svg>
+                        </button> 
+                    </div>
+                </div> 
+            </section>
+            <section class="conMas"> 
+                    <h3>Mas de nosotros</h3>
+                    <div class="dotEba">
+                        <button onclick='window.open("https://www.youtube.com/channel/UCfngC4FK7KXZvJIOMCCxxew?sub_confirmation=1")''>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="48" height="48"
+                            viewBox="0 0 24 24"
+                            >    <path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"></path></svg>
+                                         
+                        </button>
+                        <p>Dotzha Ebanisteria   </p>
+                    </div>
+                    <div class="dotHS">
+                        <button onclick='window.open("https://www.youtube.com/c/JhioTéllezGrupoSuperZAY?sub_confirmation=1")''>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="48" height="48"
+                            viewBox="0 0 24 24"
+                            >    <path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"></path></svg>
+                                         
+                        </button>
+                        <p>Dotzha Home Studio</p>
+                    </div> 
+            </section>
     </main>
     <footer class="footer">
-        p
+        <div>
+            <span>Evento patrocinado por Dotzha </span>
+            <span>© Copyright&nbsp;2022. Todos los derechos reservados.</span>
+        </div>
+        <div></div>
+        <div class="dev">
+            <span>Este sitio fue desarrollado por: </span>
+            <div>
+                <button onclick='window.open(" https://www.linkedin.com/in/jhovannytellezdev")''>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="24" height="24"
+                    viewBox="0 0 24 24">
+                       <path d="M19,3H5C3.895,3,3,3.895,3,5v14c0,1.105,0.895,2,2,2h14c1.105,0,2-0.895,2-2V5C21,3.895,20.105,3,19,3z M9,17H6.477v-7H9 V17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2c0.771,0,1.286,0.514,1.286,1.2S8.551,8.717,7.694,8.717z M18,17h-2.442v-3.826c0-1.058-0.651-1.302-0.895-1.302s-1.058,0.163-1.058,1.302c0,0.163,0,3.826,0,3.826h-2.523v-7h2.523v0.977 C13.93,10.407,14.581,10,15.802,10C17.023,10,18,10.977,18,13.174V17z"></path></svg>
+             </button>             
+             <b> Dotzha Code</b>
+            </div>
+        </div>
+
+
     </footer>
     
 </body>

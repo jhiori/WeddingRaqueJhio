@@ -1,10 +1,14 @@
 :root{
+    --numeberOfImages:7;
+    --Seconds: 28s;
+    --SecondsD: 50s;
     --dark-blue: #233253;
     /* --black-blue: #183346; */
     --black-blue: rgba(24,51,70,255);
     --black-blue-o: rgba(24,51,70,.5);
     --normal-blue: #36546c;
     --terra: #dcab83;
+    --terra2: rgb(108,28,8);
     --warm-terra: #f3e3d4;
     /* --coffee: #b77a4d; */
     --coffee: #a74927;
@@ -17,7 +21,9 @@
     --normal-gray: #69758b;
     --soft-gray: #abaec1;
     --warm-purple: #9ba9d0;
-    --transparent: rgba(255, 255, 255, .2)
+    --transparent: rgba(255, 255, 255, .2);
+    --dorado: rgb(212, 175, 55);
+    --mate-black: #28282B;
 }
 
 @font-face {
@@ -43,7 +49,7 @@
 
 html{
     font-size: 62.5%;
-    font-family:  'Montserrat',  'Roboto', 'AphroditeSlimText', 'Darleston', 'Pinyon Script','AbrahamLincoln' sans-serif;
+    font-family:  'Montserrat',  'Roboto', 'AphroditeSlimText', 'Darleston', 'Pinyon Script','AbrahamLincoln', 'Quantico' sans-serif;
     /* background-color: var(--soft-blue); */
     /* background: linear-gradient(to bottom left, #233253 -100%, #e2f1ff 100%) */
     
@@ -94,15 +100,36 @@ body{
 
 }
 
+.header div{
+    display: flex;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+}
+
+.header svg{
+    fill: var(--terra);
+}
+
 .sticky {
     position: fixed;
     top: 0;
     width: 100%
 }
 
+ .sticky + .body-main {
+    padding-top: 102px;
+} 
+
+.body-main {
+    padding: 16px;
+}
+
 .header p{
     font-family: Darleston;
-    font-size: 2.3rem;
+    font-size: 3rem;
     color: var(--soft-white);
 }
 
@@ -113,13 +140,8 @@ body{
     text-shadow: 1px 1px 2px var(--soft-gray), 0 0 1em var(--normal-blue), 0 0 0.2em var(--normal-blue);
 }
 
-.content {
-    padding: 16px;
-}
 
-/* .sticky + .content {
-    padding-top: 102px;
-} */
+
 
 .body{
     /* grid-area: navl + body + navr;     */
@@ -201,11 +223,186 @@ blockquote cite:before {
 .footer{
     grid-area: foot;
     background-color: var(--dark-blue);
-    height: 100px;
+    height: 80px;
     width: 100%;
     bottom: 0;
     /* position: fixed; */
+    text-align: center;
+    font-family: Roboto;
+    font-size: .8rem;
+    padding: 2rem;
 }
+
+.footer span{
+    color: var(--warm-blue);
+}
+
+.timeDown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 1;
+    text-align: center;
+    font-family: Pinyon Script;
+    font-size: 5rem;
+    align-content: end;
+    gap: 3;
+    border-style: dotted;
+    border-color: var(--dark-blue);
+    border-width: 12px;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+ .timeDown p{
+    /* justify-content: end; */
+    color: var(--coffee);
+    text-shadow: .4rem .4rem .4rem var(--warm-purple);
+} 
+
+.timeDown span{
+    font-size: 3rem;
+    justify-items: center;
+    color: var(--coffee);
+    text-shadow: .4rem .4rem .4rem var(--warm-purple);
+
+}
+
+.historia{
+    text-align: center;
+}
+
+.historia h2{
+    font-family: AphroditeSlimText;
+    font-size: 2rem;
+    color: var(--copper);
+}
+
+.container {
+    width: 400px;
+    position: relative;
+    /* transform: translate(-50%, -50%); */
+    /* display: block; */
+    /* top: 50%;
+    left: 50%; */
+    overflow: hidden;
+    border: 10px solid var(--warm-terra);
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1.5rem ;
+    margin-left: 1.5rem ;
+    margin-right: 1.5rem ;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(0);
+    }
+    30% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-100%);
+    }
+    55% {
+      transform: translateX(-200%);
+    }
+    75% {
+      transform: translateX(-200%);
+    }
+    80% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(-300%);
+    }
+  }
+  @keyframes mmo {
+    0% {
+      transform: translateX(-1.75rem);
+    }
+    100% {
+      transform: translateX(calc(1.75rem * (var(--numeberOfImages) - 1 )));
+    }
+  }
+
+  .wrapper img {
+    width: 100%;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    animation: slide var(--Seconds) infinite; 
+  }  
+
+  .wrapper span{
+    position: absolute;
+  }
+
+  ol,
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .backbt {
+    /* display: inline-block; */
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #333;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+    transition: transform 0.1s;
+  }
+  .listbt {
+    display: inline-block;
+  }
+  .caslnav {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+
+  .curtbt {
+    display: inline-block;
+    /*
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0.125rem;
+    */
+  
+    /*uncommment and use the above for diffrent style*/
+  
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0rem;
+  
+    background-color: white;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+  
+    animation: mmo var(--SecondsD) steps(var(--numeberOfImages), start) infinite; 
+    /* animation: mmo var(--numeberOfImages ) steps(var(--numeberOfImages), start) infinite;  */
+  }
+  .emptbt {
+    /* display: inline-block; */
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: transparent;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    font-size: 0;
+  } 
+
+
 
 .frase-2{
     font-family: AbrahamLincoln;
@@ -253,6 +450,8 @@ blockquote cite:before {
     
     ;
     text-align: center;
+    padding: .5rem;
+    margin: .5rem;
 }
 
 
@@ -413,6 +612,7 @@ blockquote cite:before {
 
 .photos{
     text-align: center; 
+   
 }
 
 /* .photos div{
@@ -435,6 +635,7 @@ blockquote cite:before {
 .photos span{
     font-family: Montserrat;
     font-size: 1.5rem;
+    padding: .5rem;
 }
 
 .normas{
@@ -478,6 +679,7 @@ blockquote cite:before {
 
 .confirmacion{
     text-align: center;
+    margin: 1rem;
 }
 
 .confirmacion h2 {
@@ -489,6 +691,142 @@ blockquote cite:before {
 .confirmacion span{ 
     font-family: Montserrat;
     font-size: 1.1rem; 
+}
+
+.conocenos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "tit tit"
+    "novia novio"
+    "noviar novior" 
+    ;
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem;
+    font-family: Darleston;
+}
+
+.conocenos h2{
+    grid-area: tit;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: var(--black-blue);
+}
+
+.conocenos button{
+    background: none;
+    border: none;
+}
+
+.conNovia span{
+    grid-area: novia;
+    color: var(--copper);
+    
+}
+
+.conNovia div{
+    grid-area: noviar;
+}
+
+.conNovia svg{
+    fill: var(--copper);
+}
+
+.conNovia svg:hover{
+    fill: var(--black-blue);
+    /* transform: scale(1.5); */
+}
+
+.conNovio span{
+    grid-area: novio;
+    color: var(--normal-blue);
+}
+ 
+.conNovio div{
+    grid-area: novior;
+}
+
+.conNovio svg{
+    fill: var(--black-blue);
+}
+
+.conNovio svg:hover{
+    fill: var(--copper);
+    /* transform: scale(1.5); */
+}
+
+.conMas{ 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:     
+    "mastit mastit"    
+    "mascon1 mascon2" 
+    ;
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 1rem;
+}  
+
+.conMas h3{
+    grid-area: mastit;
+    font-weight: 500;
+    text-align: center;
+}
+
+.conMas div{
+    text-align: center;
+}
+
+.conMas svg{
+    fill: var(--normal-gray);
+}
+
+.conMas svg:hover{
+    fill: var(--mate-black);
+}
+
+.dotEba {
+    grid-area: mascon1;
+}
+.dotHS {
+    grid-area: mascon2;
+}
+
+.conMas button{
+    background: none;
+    border: none;
+}
+
+.dev {
+    margin: .5rem; 
+    font-size: .8rem;
+}
+.dev div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.dev span{
+    font-family: Quantico;
+    margin: 1rem;    
+    text-align: center;
+}
+
+.dev button{
+    background: none;
+    border: none;
+}
+
+.dev b{
+    color: var(--terra);
+}
+
+.dev svg{
+    fill: var(--terra);
 }
 
 @media (max-width: 600px){
