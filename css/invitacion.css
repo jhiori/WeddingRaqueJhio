@@ -70,10 +70,10 @@ body{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(auto, 1fr);
     grid-template-areas: 
-    "head" 
-    "subhead" 
-    "body"    
-    "foot";
+    "head head head" 
+    "subhead subhead subhead" 
+    "navl body navR"    
+    "foot foot foot"; ;
     gap: .5rem;
 }
 
@@ -151,6 +151,10 @@ body{
 .body{
     /* grid-area: navl + body + navr;     */
     grid-area: body;
+    border: .1rem solid var(--black-blue);
+    /* text-align: center;
+    align-items: center;
+    justify-content: center; */
 }
 
 .body-main{
