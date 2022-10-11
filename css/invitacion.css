@@ -70,12 +70,17 @@ body{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(auto, 1fr);
     grid-template-areas: 
-    "head head head" 
-    "subhead subhead subhead" 
-    "navl body navR"    
-    "foot foot foot";
+    "head" 
+    "subhead" 
+    "body"    
+    "foot";
     gap: .5rem;
 }
+
+/* "head head head" 
+    "subhead subhead subhead" 
+    "navl body navR"    
+    "foot foot foot"; */
 
 /* grid-template-areas: 
 "head head head head head head"
@@ -123,9 +128,9 @@ body{
     padding-top: 102px;
 } 
 
-.body-main {
+/* .body-main {
     padding: 16px;
-}
+} */
 
 .header p{
     font-family: Darleston;
@@ -168,8 +173,8 @@ body{
 }
 
 .body-video iframe{ 
-    width:412px;
-    height: 315px
+    width: 355px;
+    height: 280px
 }
 
 
