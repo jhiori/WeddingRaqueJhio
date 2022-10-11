@@ -16,6 +16,9 @@ function myFunction() {
     header.classList.remove('sticky');
   }
 }
+
+currentSlide(1)
+
 })
 
 
@@ -53,7 +56,7 @@ function initMap() {
   window.initMap = initMap;
 
   var countDownDate = new Date("Nov 12, 2022 13:30:00").getTime();
-  
+  // var countDownDate = new Date("Oct 9, 2022 13:30:00").getTime();
   
   var myfunc = setInterval(function() {
 // function setInterval(){
@@ -75,11 +78,41 @@ function initMap() {
 
     if (timeleft < 0) {
         clearInterval(myfunc);
-        document.getElementById("days").innerHTML = ""
-        document.getElementById("hours").innerHTML = "" 
-        document.getElementById("mins").innerHTML = ""
-        document.getElementById("secs").innerHTML = ""
-        document.getElementById("end").innerHTML = "TIME UP!!";
+        document.getElementById("days").innerHTML = "--"
+        document.getElementById("hours").innerHTML = "--" 
+        document.getElementById("mins").innerHTML = "--"
+        document.getElementById("secs").innerHTML = "--"
+        // document.getElementById("end").innerHTML = "¡Es Hoy!";
     }
     // console.log('Entra en funcion por segundo' + new Date())
 }, 1000);
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+

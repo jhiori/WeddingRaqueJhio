@@ -174,20 +174,24 @@ body{
 
 .frase-intro{
     /* grid-area: nal2 + bod2 + nar2; */
-    text-align: center;
-    
+  
     /* opacity: 0.6; */
 
 }
  
 
 .frase-intro div{
+    display: flex;
     background-color: var(--soft-white);        
     border-radius: 1.8rem; 
     opacity: .4;
     border: .1rem solid var(--black-blue);
     /* border-color: var(--soft-white);
     border: 1rem; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
 }
 
 
@@ -271,136 +275,117 @@ blockquote cite:before {
     text-align: center;
 }
 
+.historiaDiv{
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
 .historia h2{
     font-family: AphroditeSlimText;
     font-size: 2rem;
     color: var(--copper);
 }
 
-.container {
-    width: 400px;
-    position: relative;
-    /* transform: translate(-50%, -50%); */
-    /* display: block; */
-    /* top: 50%;
-    left: 50%; */
-    overflow: hidden;
-    border: 10px solid var(--warm-terra);
-    border-radius: 8px;
-    box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.3);
-    margin-bottom: 1.5rem ;
-    margin-left: 1.5rem ;
-    margin-right: 1.5rem ;
-  }
+.mySlides {
+    display: none;
+    border: 8px solid var(--warm-terra);
+    border-radius: 10px;
+}
 
-  @keyframes slide {
-    0% {
-      transform: translateX(0);
-    }
-    25% {
-      transform: translateX(0);
-    }
-    30% {
-      transform: translateX(-100%);
-    }
-    50% {
-      transform: translateX(-100%);
-    }
-    55% {
-      transform: translateX(-200%);
-    }
-    75% {
-      transform: translateX(-200%);
-    }
-    80% {
-      transform: translateX(-300%);
-    }
-    100% {
-      transform: translateX(-300%);
-    }
-  }
-  @keyframes mmo {
-    0% {
-      transform: translateX(-1.75rem);
-    }
-    100% {
-      transform: translateX(calc(1.75rem * (var(--numeberOfImages) - 1 )));
-    }
-  }
+.historia img {vertical-align: middle;}
 
-  .wrapper img {
-    width: 100%;
-  }
-  .wrapper {
-    width: 100%;
-    display: flex;
-    animation: slide var(--Seconds) infinite; 
-  }  
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
-  .wrapper span{
-    position: absolute;
-  }
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 
-  ol,
-  li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .backbt {
-    /* display: inline-block; */
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: #333;
-    background-clip: content-box;
-    border: 0.25rem solid transparent;
-    border-radius: 50%;
-    font-size: 0;
-    transition: transform 0.1s;
-  }
-  .listbt {
-    display: inline-block;
-  }
-  .caslnav {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
     left: 0;
-    text-align: center;
-  }
+}
 
-  .curtbt {
-    display: inline-block;
-    /*
-    width: 1.25rem;
-    height: 1.25rem;
-    margin: 0.125rem;
-    */
-  
-    /*uncommment and use the above for diffrent style*/
-  
-    width: 1.5rem;
-    height: 1.5rem;
-    margin: 0rem;
-  
-    background-color: white;
-    background-clip: content-box;
-    border: 0.25rem solid transparent;
-    border-radius: 50%;
-    font-size: 0;
-  
-    animation: mmo var(--SecondsD) steps(var(--numeberOfImages), start) infinite; 
-    /* animation: mmo var(--numeberOfImages ) steps(var(--numeberOfImages), start) infinite;  */
-  }
-  .emptbt {
-    /* display: inline-block; */
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: transparent;
-    background-clip: content-box;
-    border: 0.25rem solid transparent;
-    font-size: 0;
-  } 
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
 
 
 
@@ -555,7 +540,7 @@ blockquote cite:before {
 .invitacion-descCeremonia{
     grid-area: ceremoniaDU;
     font-family: Montserrat;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     
 }
 
@@ -580,7 +565,7 @@ blockquote cite:before {
 .invitacion-descRecepcion{
     grid-area: recepcionDU;
     font-family: Montserrat;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 
 .invitacion-ubicRecepcion{

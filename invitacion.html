@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Montserrat:wght@100;300;400;500&family=Pinyon+Script&family=Quantico&family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
     <script src="./invitacion.js"></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDm54Yh3atuxgWNK0vfyhk7b8MkndRBt84&callback=initMap&v=weekly"
@@ -69,68 +70,54 @@
                     <span>Segs</span>
                     
                 </div>
-                <!-- <h2 id="end"></h2> -->
+                <h2 id="end"></h2>
             </section>
 
             <section class="historia">
-                <div>
+                <div class="historiaDiv">
                     <h2>Un poco de nosotros</h2>
-                      
-                    <div class="container">
-                        <div class="wrapper">
-                            <!-- <div> -->
-                                <!-- <span>Nos conocimos al ser estudiambres dentro del internacional TESJI</span>                              -->
-                                <img src="https://picsum.photos/800/400" />                          <!-- photo -->
-                            <!-- </div> -->
-                            <!-- <div> -->
-                                <!-- <span>Aunque teniamos conciencia de nuestra existencia (de ambos) no teniamos convivencia alguna por tener cada quien su banda</span>                              -->
-                                <img src="https://picsum.photos/800/400" /><!-- photo -->
-                            <!-- </div> -->
-                            <!-- <div> -->
-                                <!-- <span>Un dia de trabajo en equipo al intercambiar ideas coincidimos en un sin fin de objetivos de nuestras vidas</span>                              -->
-                                <img src="https://picsum.photos/800/400" /><!-- photo -->
-                            <!-- </div>
-                            <div> -->
-                                <!-- <span>Pese a todo iniciamos una relaci&oacute;n de noviasgo el 12 de Noviembre de 2015</span>                              -->
-                                <img src="https://picsum.photos/800/400" /> <!-- photo -->
-                            <!-- </div>
-                            <div> -->
-                                <!-- <span>El que no arriesga no gana!, me atrev&iacute; a pedirle matrimonio a Raquel el 12 de Noviembre de 2020</span>                              -->
-                                <img src="https://picsum.photos/800/400" />
-                            <!-- </div>
-                            <div> -->
-                                <!-- <span>Nos casamos por lo civil el 19 de Marzo de 2022</span>                              -->
-                                <img src="https://picsum.photos/800/400" />
-                            <!-- </div>
-                            <div> -->
-                                <!-- <span>Ahora velices en este gran viaje por la vida aqui seguimos de pie, firmes y forjando nuestros objetivos</span>                              -->
-                                <img src="https://picsum.photos/800/400" />
-                            <!-- </div> -->
-                        
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                          <!-- <div class="numbertext">1 / 3</div> -->
+                          <img src="./assets/img/pics/1.jpg" style="width:100%">                          
+                        </div>                        
+                        <div class="mySlides fade">
+                          <!-- <div class="numbertext">2 / 3</div> -->
+                          <img src="./assets/img/pics/2.jpg" style="width:100%">                          
+                        </div>                        
+                        <div class="mySlides fade">
+                          <!-- <div class="numbertext">3 / 3</div> -->
+                          <img src="./assets/img/pics/3.jpg" style="width:100%">                          
                         </div>
-                        <aside class="caslnav">
-                          <ol>
-                            <li class="listbt"><div class="backbt">O</div></li><!-- grey background -->
-                            <li class="listbt"><div class="backbt">O</div></li><!-- grey background -->
-                            <li class="listbt"><div class="backbt">O</div></li><!-- grey background -->
-                            <li class="listbt"><div class="backbt">O</div></li><!-- grey background -->
-                            <li class="listbt"><div class="backbt">O</div></li><!-- grey background -->
-                            <li class="listbt"><div class="backbt">O</div></li><!-- grey background -->
-                            <li class="listbt"><div class="backbt">O</div></li><!-- grey background --> 
-                          </ol>
-                        </aside>
-                        <aside class="caslnav">
-                          <ol>
-                            <li class="listbt"><div class="curtbt">o</div></li><!--white button-->
-                            <li class="listbt"><div class="emptbt"></div></li><!-- spacer -->
-                            <li class="listbt"><div class="emptbt"></div></li><!-- spacer -->
-                            <li class="listbt"><div class="emptbt"></div></li><!-- spacer -->
-                            <li class="listbt"><div class="emptbt"></div></li><!-- spacer -->
-                            <li class="listbt"><div class="emptbt"></div></li><!-- spacer -->
-                            <li class="listbt"><div class="emptbt"></div></li><!-- spacer -->
-                          </ol>
-                        </aside>
+                        <div class="mySlides fade">
+                        <!-- <div class="numbertext">3 / 3</div> -->
+                        <img src="./assets/img/pics/10.jpg" style="width:100%">                        
+                        </div>
+                        <div class="mySlides fade">
+                        <!-- <div class="numbertext">3 / 3</div> -->
+                        <img src="./assets/img/pics/24.jpg" style="width:100%">                        
+                        </div>
+                        <div class="mySlides fade">
+                            <!-- <div class="numbertext">3 / 3</div> -->
+                            <img src="./assets/img/pics/25.jpg" style="width:100%">                            
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                        
                     </div>
+                    <br>
+                        
+                        <div style="text-align:center">
+                          <span class="dot" onclick="currentSlide(1)"></span> 
+                          <span class="dot" onclick="currentSlide(2)"></span> 
+                          <span class="dot" onclick="currentSlide(3)"></span> 
+                          <span class="dot" onclick="currentSlide(4)"></span> 
+                          <span class="dot" onclick="currentSlide(5)"></span> 
+                          <span class="dot" onclick="currentSlide(6)"></span> 
+                        </div> 
+ 
                 </div>
                 
             </section>
