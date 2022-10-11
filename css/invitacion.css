@@ -852,24 +852,43 @@ blockquote cite:before {
     fill: var(--terra);
 }
 
-.pedirMatrimonio{
-    /* grid-area: nal1 + bod1 + nar1; */
+.pedirMatrimonio {
+    display: flexbox;
+    /* display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "pmTit1 pmTit2"
+    "pmVid pmVid" ; */
     text-align: center;
     width: 100%;
     justify-content: center;
-    align-items: center;
-    margin: 1.3rem;
+    /* align-content: center; */ 
 }
 
 .pedirMatrimonio h3{
+    /* grid-area: pmTit1; */
     font-family: AphroditeSlimText;
-    font-size: 2rem; 
-    color: var(--mate-black);
+    font-size: 1.8rem; 
+    color: var(--black-copper);
+    /* justify-self: end; */
+    /* align-self: center; */
 }
 
+/* .pedirMatrimonio h2{
+    grid-area: pmTit2;
+    font-family: AphroditeSlimText;
+    font-size: 1.5rem; 
+    color: var(--mate-black);
+    justify-self: start;
+    /* align-self: center; 
+} */
+
 .pedirMatrimonio iframe{ 
+    grid-area: pmVid;
     width: 355px;
-    height: 280px
+    height: 280px;
+    justify-self: center;
+    align-self: center;
 }
 
 @media (min-width: 600px){
