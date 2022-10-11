@@ -55,7 +55,8 @@ html{
     
     /* background-image: linear-gradient(to top right, #9ba9d0 -21%, #f6f5fa 100%);  */
     /* background-repeat: no-repeat; */
-    
+    /* align-self: center;
+    justify-self: center; */
 }   
 
 body{
@@ -63,24 +64,32 @@ body{
     background: linear-gradient(335deg, rgba(155,169,208,1) 0%, rgba(246,245,250,1) 100%);
     /* background: linear-gradient(to top right, #9ba9d0 -21%, #f6f5fa 100%) no-repeat; */
     /* background: -webkit-linear-gradient(to top right, #9ba9d0 -21%, #f6f5fa 100%); */
+    /* align-self: center;
+    justify-self: center; */
 }
 
 .body{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns:  1px, 1fr, 1px;
     grid-template-rows: repeat(auto, 1fr);
     grid-template-areas: 
     "head head head" 
     "subhead subhead subhead" 
     "navl body navR"    
-    "foot foot foot"; ;
-    gap: .5rem;
+    "foot foot foot"; 
+    gap: .5rem; 
+    
 }
 
 /* "head head head" 
     "subhead subhead subhead" 
     "navl body navR"    
     "foot foot foot"; */
+
+    /* "head" 
+    "subhead" 
+    "body"    
+    "foot" */
 
 /* grid-template-areas: 
 "head head head head head head"
@@ -102,7 +111,8 @@ body{
     padding: 10px ;
     height: 120px;
     background-color: var(--copper);
-
+    margin: 0;
+    
 }
 
 .header div{
@@ -120,8 +130,11 @@ body{
 
 .sticky {
     position: fixed;
+    /* position: inherit; */
     top: 0;
-    width: 100%
+    right: 0;
+    width: 100%;
+    
 }
 
  .sticky + .body-main {
@@ -151,10 +164,15 @@ body{
 .body{
     /* grid-area: navl + body + navr;     */
     grid-area: body;
-    border: .1rem solid var(--black-blue);
+    /* border: .2rem solid var(--dorado); */
     /* text-align: center;
     align-items: center;
     justify-content: center; */
+    min-width: 105px;
+    max-width: 1024px;
+    /* align-self: center;
+    justify-self: center; */
+    margin: auto;
 }
 
 .body-main{
@@ -166,6 +184,9 @@ body{
     "sec2 sec2 sec2";
     gap: 3; */
     grid-area: body;
+    align-self: center;
+    justify-self: center;
+   
 }
 
 .body-video{
@@ -527,14 +548,17 @@ blockquote cite:before {
     font-family: AbrahamLincoln;
     font-size: 1.9rem;
     align-self: center;
+    
 }
 
 .invitacion-parroquia{
     grid-area: ceremoniaPR;
     width: 100%;
+    max-width: 360px;
     height: 150px;
     transition: transform ease-in-out 0.3s;
-    
+    align-self: center;
+    justify-self: center;
 }
 
 .invitacion-parroquia:hover{
@@ -575,9 +599,11 @@ blockquote cite:before {
 .invitacion-ubicRecepcion{
     grid-area: recepcionPL;
     width: 100%;
+    max-width: 360px;
     height: 150px;
     transition: transform ease-in-out 0.3s;
-    
+    align-self: center;
+    justify-self: center;
 }
 
 .invitacion-ubicRecepcion:hover{
