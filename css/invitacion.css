@@ -730,7 +730,7 @@ blockquote cite:before {
     "noviar novior" 
     ;
     text-align: center;
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin: 2rem;
     font-family: Darleston;
 }
@@ -749,7 +749,7 @@ blockquote cite:before {
     border: none;
     /* border: 1px solid var(--mate-white);*/
     border-radius: 100%; 
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.19), 0 6px 20px 0 var(--mate-black);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.19), 0 3px 10px 0 var(--mate-black);
     justify-content: center;
     align-content: center;
 }
@@ -757,7 +757,7 @@ blockquote cite:before {
 .conNovia span{
     grid-area: novia;
     color: var(--copper);
-    
+    /* text-shadow: 1px 1px 2px var(--mate-black), 0 0 1em var(--normal-gray), 0 0 0.2em var(--normal-gray); */
 }
 
 .conNovia div{
