@@ -803,13 +803,14 @@ blockquote cite:before {
     ;
     font-family: Montserrat;
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }  
 
 .conMas h3{
     grid-area: mastit;
     font-weight: 500;
     text-align: center;
+    margin: 1rem;
 }
 
 .conMas div{
@@ -828,8 +829,17 @@ blockquote cite:before {
 .dotEba {
     grid-area: mascon1;
 }
+
+.dotEba p{
+    margin: 1rem;
+}
+
 .dotHS {
     grid-area: mascon2;
+}
+
+.dotHS p{
+    margin: 1rem;
 }
 
 .conMas button{
@@ -908,6 +918,46 @@ blockquote cite:before {
     height: 280px;
     justify-self: center;
     align-self: center;
+}
+
+.continuePost {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "titCon titCon"
+    "photosCon movieCon"
+    ;
+    gap: 3;
+    text-align: center; 
+    margin: 3rem; 
+}
+
+.continuePost span{
+    grid-area: titCon;
+    font-family: Quantico;
+    font-size: 2rem;
+    margin: 1rem;
+    color: var(--black-copper);
+}
+
+.continuePost p, img{    
+    font-family: Pinyon Script;
+    font-size: 4rem;
+    color: var(--copper);
+    animation: blink 1.5s linear infinite;
+}
+
+@keyframes blink {
+    50%{opacity: 0}
+    80%{opacity: .5}
+}
+
+.photosCont {
+    grid-area: photosCon;
+}
+
+.videoCont{
+    grid-area: movieCon;
 }
 
 @media (min-width: 600px){
