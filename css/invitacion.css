@@ -956,10 +956,14 @@ blockquote cite:before {
     50% { border-color: orange; }
   } */
 
-.continuePost p, img{    
+.continuePost p{    
     font-family: Pinyon Script;
     font-size: 4rem;
     color: var(--copper);
+    animation: blink 1.5s linear infinite;
+}
+
+.continuePost img{
     animation: blink 1.5s linear infinite;
 }
 
