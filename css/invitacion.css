@@ -24,6 +24,7 @@
     --transparent: rgba(255, 255, 255, .2);
     --dorado: rgb(212, 175, 55);
     --mate-black: #28282B;
+    --mate-white: rgb(253, 251, 249);
 }
 
 @font-face {
@@ -220,7 +221,6 @@ body{
 }
 
 
-
 .frase-intro blockquote{
     font-family: AphroditeSlimText ;
     font-size: 2rem;
@@ -230,9 +230,10 @@ body{
     padding: 0.35em 40px;
     line-height: 1.45;
     position: relative;
-    /* color: #383838; */
-    color: black;
+    /* color: #383838; */ 
+    color: var(--mate-black);
 }
+
 
 blockquote:before {
     display: block;
@@ -242,7 +243,7 @@ blockquote:before {
     position: absolute;
     left: -20px;
     top: -20px;
-    color: #7a7a7a;
+    color: var(--mate-black);
     }
 
 blockquote cite:before {
@@ -335,13 +336,13 @@ blockquote cite:before {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 4rem;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -397,6 +398,10 @@ blockquote cite:before {
 .active, .dot:hover {
   background-color: #717171;
 }
+
+/* .active{
+    background-color: #717171;
+  } */
 
 /* Fading animation */
 .fade {
@@ -739,8 +744,14 @@ blockquote cite:before {
 }
 
 .conocenos button{
+    /* background-color: var(--mate-white); */
     background: none;
     border: none;
+    /* border: 1px solid var(--mate-white);*/
+    border-radius: 100%; 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.19), 0 6px 20px 0 var(--mate-black);
+    justify-content: center;
+    align-content: center;
 }
 
 .conNovia span{
