@@ -334,6 +334,7 @@ blockquote cite:before {
 
 /* Next & previous buttons */
 .prev, .next {
+  font-family: Quantico;
   cursor: pointer;
   position: absolute;
   top: 45%;
@@ -346,6 +347,8 @@ blockquote cite:before {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  /* text-align: center;
+  vertical-align: middle; */
 }
 
 /* Position the "next button" to the right */
