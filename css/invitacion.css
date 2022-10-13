@@ -935,10 +935,26 @@ blockquote cite:before {
 .continuePost span{
     grid-area: titCon;
     font-family: Quantico;
-    font-size: 2rem;
-    margin: 1rem;
+    font-size: 2rem; 
+    overflow: hidden;
+    /* white-space: nowrap; */
+    margin: 1rem auto;
     color: var(--black-copper);
+    /* animation: 
+    typing 5.5s steps(40, end),
+    blink-caret .75s step-end infinite; */
 }
+
+/* @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect 
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  } */
 
 .continuePost p, img{    
     font-family: Pinyon Script;
