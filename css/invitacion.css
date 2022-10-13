@@ -812,13 +812,14 @@ blockquote cite:before {
 .conMas div{
     text-align: center;
 }
+ 
 
 .conMas svg{
     fill: var(--normal-gray);
 }
 
 .conMas svg:hover{
-    fill: var(--mate-black);
+    fill: var(--mate-white);
 }
 
 .dotEba {
@@ -829,8 +830,11 @@ blockquote cite:before {
 }
 
 .conMas button{
-    background: none;
+    background: var(--mate-black);
     border: none;
+    /* border: 1px solid var(--mate-black); */
+    border-radius: 20%; 
+    padding: .3rem;
 }
 
 .dev {
