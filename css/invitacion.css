@@ -314,6 +314,11 @@ blockquote cite:before {
     color: var(--copper);
 }
 
+.historia p{
+    font-size: .8rem;
+    animation: blink 2s linear infinite;
+}
+
 .mySlides {
     display: none;
     border: 8px solid var(--warm-terra);
@@ -709,6 +714,8 @@ blockquote cite:before {
 }
 
 .confirmacion{
+    display: flexbox;
+    
     text-align: center;
     margin: 1rem;
 }
@@ -721,7 +728,11 @@ blockquote cite:before {
 
 .confirmacion span{ 
     font-family: Montserrat;
-    font-size: 1.1rem; 
+    font-size: 1.4rem; 
+}
+
+.confirmacion b{
+    font-size: 1.2rem; 
 }
 
 .conocenos{
@@ -741,7 +752,7 @@ blockquote cite:before {
 .conocenos h2{
     grid-area: tit;
     font-family: Montserrat;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 1rem;
     color: var(--black-blue);
 }
