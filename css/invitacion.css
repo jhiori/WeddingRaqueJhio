@@ -675,7 +675,9 @@ blockquote cite:before {
 }
 
 .photos a{
-    animation: blink 2s linear infinite;
+    font-size: 1.1rem;
+    animation: blink 2.5s linear infinite;
+    
 }
 
 .normas{
