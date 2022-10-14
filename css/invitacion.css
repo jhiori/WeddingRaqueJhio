@@ -674,6 +674,10 @@ blockquote cite:before {
     padding: .5rem;
 }
 
+.photos a{
+    animation: blink 2s linear infinite;
+}
+
 .normas{
     text-align: center;   
     background-color: var(--transparent);
