@@ -55,7 +55,7 @@ function initMap() {
   
   window.initMap = initMap;
 
-  var countDownDate = new Date("Nov 12, 2022 13:30:00").getTime();
+  var countDownDate = new Date("Nov 11, 2023 13:30:00").getTime();
   // var countDownDate = new Date("Oct 9, 2022 13:30:00").getTime();
   
   var myfunc = setInterval(function() {

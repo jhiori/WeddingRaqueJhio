@@ -738,6 +738,7 @@ blockquote cite:before {
 }
 
 .confirmacion b{
+    /* font-family: Roboto; */
     font-size: 1.2rem; 
 }
 
